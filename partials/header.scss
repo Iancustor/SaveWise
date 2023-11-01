@@ -1,0 +1,56 @@
+header {
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  position: relative;
+  height: 50px;
+  .img-logo {
+    width: 120px;
+  }
+  .navList {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    color: $color-Gold;
+  }
+
+  .humberg-menu-btn {
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media (max-width: 888px) {
+    .img-logo {
+      width: 117px;
+      margin-top: -2rem;
+    }
+    .humberg-menu-btn {
+      display: block;
+    }
+    .navList {
+      display: flex;
+      top: 70px;
+      right: -1000px;
+
+      transition: all 0.6s ease;
+      flex-direction: column;
+      position: fixed;
+      padding: 0.5rem 2rem;
+      width: 100%;
+      color: $color-black;
+      background-color: $color-white;
+    }
+    .nav__item {
+      border-bottom: 1px solid $color-black;
+    }
+    .showMenu {
+      right: -180px;
+    }
+  }
+}

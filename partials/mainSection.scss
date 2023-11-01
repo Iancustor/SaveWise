@@ -1,0 +1,163 @@
+.mainSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    .left-main {
+      display: grid;
+      gap: 1.5rem;
+      .heading {
+        font-size: 7rem;
+        line-height: 6rem;
+        margin-top: -8rem;
+      }
+      .description {
+        color: $color-Gold;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      .mainForm {
+        display: flex;
+        gap: 1rem;
+        input {
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: $color-white;
+          border-bottom: 1px solid $color-Gold;
+          text-align: center;
+        }
+        .submitBtn {
+          background-color: $color-Gold;
+          padding: 0.5rem 1.7rem;
+          color: $color-black;
+          font-weight: 700;
+          border-top-right-radius: 6rem;
+          border-bottom-right-radius: 6rem;
+        }
+      }
+    }
+    .right-main {
+      position: relative;
+      .savewise {
+        position: absolute;
+        color: $color-Gold;
+        left: 34%;
+        top: 8%;
+      }
+      .save-text {
+        color: $color-Gold;
+      }
+    }
+  }
+  @media (max-width: 878px) {
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 8rem;
+
+      .left-main {
+        display: flex;
+
+        flex-direction: column;
+        gap: 1.5rem;
+        .heading {
+          font-size: 6rem;
+          line-height: 6rem;
+          margin-top: -8rem;
+        }
+        .description {
+          color: $color-Gold;
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+        .mainForm {
+          display: flex;
+          gap: 1rem;
+          input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: $color-white;
+            border-bottom: 1px solid $color-Gold;
+            text-align: center;
+          }
+          .submitBtn {
+            background-color: $color-Gold;
+            padding: 0.5rem 1.7rem;
+            color: $color-black;
+            font-weight: 700;
+            border-top-right-radius: 6rem;
+            border-bottom-right-radius: 6rem;
+          }
+        }
+      }
+      .right-main {
+        .save-text {
+          color: $color-Gold;
+          font-size: 1rem;
+        }
+      }
+    }
+    @media (max-width: 478px) {
+      .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 8rem;
+
+        .left-main {
+          display: flex;
+
+          flex-direction: column;
+          gap: 1.5rem;
+          .heading {
+            font-size: 4.8rem;
+            line-height: 6rem;
+            margin-top: -8rem;
+          }
+          .description {
+            color: $color-Gold;
+            font-size: 1.5rem;
+            font-weight: 400;
+          }
+          .mainForm {
+            display: flex;
+            gap: 1rem;
+            input {
+              border: none;
+              outline: none;
+              background-color: transparent;
+              color: $color-white;
+              border-bottom: 1px solid $color-Gold;
+              text-align: center;
+            }
+            .submitBtn {
+              background-color: $color-Gold;
+              padding: 0.5rem 1.3rem;
+              color: $color-black;
+              font-weight: 700;
+              border-top-right-radius: 6rem;
+              border-bottom-right-radius: 6rem;
+            }
+          }
+        }
+        .right-main {
+          .save-text {
+            color: $color-Gold;
+          }
+        }
+      }
+    }
+  }
+}
