@@ -1,4 +1,5 @@
 .mainSection {
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,10 +12,11 @@
     .left-main {
       display: grid;
       gap: 1.5rem;
-      .heading {
+      .mainheading {
         font-size: 7rem;
         line-height: 6rem;
         margin-top: -8rem;
+        font-weight: 800;
       }
       .description {
         color: $color-Gold;
@@ -121,9 +123,9 @@
 
           flex-direction: column;
           gap: 1.5rem;
-          .heading {
-            font-size: 4.8rem;
-            line-height: 6rem;
+          .mainheading {
+            font-size: 6rem;
+            font-weight: 800;
             margin-top: -8rem;
           }
           .description {

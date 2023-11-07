@@ -9,3 +9,23 @@ body {
   background: $color-black;
   color: $color-white;
 }
+strong {
+  color: $color-Gold;
+}
+.heading {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: $color-Gold;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $colors-yellow;
+  color: black;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+}

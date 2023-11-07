@@ -1,10 +1,11 @@
 #for-clients {
+  margin-top: 0.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 2rem;
   h5 {
     color: $color-Gold;
     font-size: 1.4rem;
@@ -15,11 +16,6 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    .clients-heading {
-      color: $color-Gold;
-      font-size: 2rem;
-      font-weight: 800;
-    }
   }
   .clients-info {
     display: flex;
@@ -56,9 +52,6 @@
       p {
         display: flex;
         text-align: center;
-      }
-      strong {
-        color: $color-Gold;
       }
     }
   }
@@ -131,7 +124,7 @@
       }
     }
   }
-  @media (max-width: 692pxpx) {
+  @media (max-width: 692px) {
     #for-clients {
       .clients-info {
         display: flex;
@@ -172,6 +165,30 @@
           }
           strong {
             color: $color-Gold;
+          }
+        }
+      }
+      .testimonials {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        .testmal-container {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .testmal-details {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .testmal-img {
+            display: flex;
+            flex-direction: column;
+            img {
+              border-radius: 14px;
+              width: 255px;
+              height: 250px;
+            }
           }
         }
       }
