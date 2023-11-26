@@ -39,7 +39,7 @@ setInterval(() => {
 
   let day = Math.floor(period / (1000 * 60 * 60 * 24));
   // console.log(day);
-  let hours = Math.floor((period % (1000 * 60 * 60 * 24)) / (1000 * 60))
+  let hours = Math.floor((period % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
     .toString()
     .padStart(2, "0");
   let mins = Math.floor(period % ((1000 * 60 * 60) / (1000 * 60)))
