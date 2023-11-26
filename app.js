@@ -29,7 +29,7 @@ setInterval(() => {
   // const secs = today.getSeconds().toString().padStart(2, "0");
 
   // Launch
-  let launchDate = new Date(`2024-01-01  12:00:00`);
+  let launchDate = new Date(`2024-01-01  00:00:00`);
   // console.log(launchDate);
 
   let now = new Date(launchDate).getTime();
@@ -39,7 +39,7 @@ setInterval(() => {
 
   let day = Math.floor(period / (1000 * 60 * 60 * 24));
   // console.log(day);
-  let hours = Math.floor((period % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  let hours = Math.floor((period % (1000 * 60 * 60 * 24)) / (1000 * 60))
     .toString()
     .padStart(2, "0");
   let mins = Math.floor(period % ((1000 * 60 * 60) / (1000 * 60)))
