@@ -65,6 +65,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.scss" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>SaveWise - Your Ultimate Money-Saving Solution</title>
   </head>
@@ -102,8 +103,8 @@
     <!-- Home Section -->
     <section class="mainSection" id="home">
       <div class="main">
-        <div class="left-main">
-          <h2 class="mainheading">Save <br />Your <br />Money</h2>
+        <div  class="left-main">
+          <h2 data-aos="zoom-in"  class="mainheading">Save <br />Your <br />Money</h2>
           <h3 class="description">Get early Acess</h3>
           <form class="mainForm">
             <input type="text" placeholder="youremail@gmail.com" required />
@@ -125,7 +126,7 @@
         <p>How SaveWise benefits individual users</p>
       </header>
       
-<div id="accordion-arrow-icon" data-accordion="open">
+<div data-aos="zoom-in" id="accordion-arrow-icon" data-accordion="open">
   <h2 id="accordion-arrow-icon-heading-1">
     <button type="button" class="color flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border border-b-0 border-yellow-200 rounded-t-xl focus:ring-4 focus:ring-gray-200dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-arrow-icon-body-1" aria-expanded="true" aria-controls="accordion-arrow-icon-body-1">
       <span>FAQS</span>
@@ -184,7 +185,9 @@
         <div class="testmal-container">
           <div class="testmal-details">
             <div class="testmal-img">
-              <img src=".images/avatas.jpg" alt="" class="imge-avator" />
+              <img data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000" src="/Images/avatas.jpg" alt="" class="imge-avator" />
             </div>
             <h3 class="avator-hd">Evelyn Kisakye</h3>
             <div class="testmal-stars">
@@ -201,7 +204,9 @@
           </div>
           <div class="testmal-details">
             <div class="testmal-img">
-              <img src=".images/moses.k.png" alt="" class="imge-avator" />
+              <img data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000" src="/Images/moses.k.png" alt="" class="imge-avator" />
             </div>
             <h3 class="avator-hd">Kisakye Moses</h3>
             <div class="testmal-stars">
@@ -230,11 +235,11 @@
       <div class="coporative-container">
         <h5>Corporate Plans:</h5>
         <ul class="plans">
-          <div class="plan1">Team financial management solutions</div>
+          <div data-aos="fade-right" class="plan1">Team financial management solutions</div>
           <div class="plan2">
             Customized financial analytics for business planning
           </div>
-          <div class="paln3">Employee budgeting assistance programs</div>
+          <div data-aos="fade-left" class="paln3">Employee budgeting assistance programs</div>
         </ul>
       </div>
       <p class="description">
@@ -269,7 +274,7 @@
         <h2 class="heading">Contact Us</h2>
         <p>Get in touch with the SaveWise team</p>
       </header>
-      <p class="contact-p">
+      <p data-aos="zoom-in" class="contact-p">
         "SaveWise: Transforming finance for individuals and businesses.
         Personalized budgeting, smart savings tools, and insightful financial
         management for a secure, informed, and prosperous future."
@@ -356,12 +361,16 @@
         </li>
       </ul>
 
-      <a
+      <a 
         href="https://custor-potfolio.vercel.app/ "
         class="text-slate-50 font-bold hover:underline me-4 md:me-6"
         >@custor Dev</a
       >
     </footer>
+    <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="app.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
