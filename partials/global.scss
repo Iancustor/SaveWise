@@ -30,6 +30,20 @@ strong {
   font-size: 1.3rem;
   padding: 0.5rem 1rem;
 }
+
 .color {
   background-color: $colors-yellow;
+}
+
+@media (max-width: 460px) {
+  .newMessage {
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  @media (max-width: 360px) {
+    .newMessage {
+      font-weight: 800;
+      font-size: 0.8rem;
+    }
+  }
 }
